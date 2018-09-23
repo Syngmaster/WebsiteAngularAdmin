@@ -1,0 +1,54 @@
+<div class="container-fluid">
+	<div style="color: black;">
+		<h1 style="text-align: center;">{{title}}</h1>
+		<h3 style="text-align: center;">{{description}}</h3>
+	</div>
+ 
+	<!-- <div style="width: 300px;">
+		<form (ngSubmit)="onSubmit()">
+			<div class="form-group">
+				<label for="item">Item</label> <input type="text"
+					class="form-control" placeholder="Enter content..." id="item"
+					required [(ngModel)]="itemValue" name="item">
+			</div>
+ 
+			<div class="btn-group">
+				<button type="submit" class="btn btn-success">Submit</button>
+			</div>
+		</form>
+	</div> -->
+
+	<!-- MEN items list  -->
+	<div class="container">
+		<p class="title">MEN</p>
+		<ul>
+			<li *ngFor="let user of users$">
+			  <a routerLink="/subcategory/{{user.title}}">{{user.title}}</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Women items list  -->
+	<div class="container"> 
+		<p class="title">WOMEN</p>
+		<ul>
+			<li *ngFor="let item of womenItems | async">
+			  <a routerLink="">{{item.title}}</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Unisex items list  -->
+	<div class="container">
+		<p class="title">UNISEX</p>
+		<ul>
+			<li *ngFor="let item of unisexItems | async">
+			  <a routerLink="">{{item.title}}</a>
+			</li>
+		</ul>
+	</div>
+ 
+	<!-- <div class="col-md-3">
+		<pre *ngFor="let item of menItems | async">{{item.title}}</pre>
+	</div> -->
+</div>

@@ -1,0 +1,9 @@
+<h1>{{ user$.title }}</h1>
+
+<div class="container">
+  <ul>
+    <li *ngFor="let item of items">
+      <a routerLink="/item-details/{{item.itemName}}">{{item.itemName}}</a>
+    </li>
+  </ul>
+</div>

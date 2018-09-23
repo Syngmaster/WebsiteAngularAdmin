@@ -1,0 +1,28 @@
+
+<div>
+  <p class="title">Item name </p>
+  <p id="name">{{item.itemName}}</p>
+  <p class="title">Item price</p>
+  <p id="price">{{item.price}} €</p>
+  <p class="title">Item description</p>
+  <p id="description">{{item.description}}</p>
+  <p class="title">Item on sale</p>
+  <p id="sale">{{item.isOnSale}}</p>
+
+  <h2 class="title">Item Images</h2>
+
+  <img src="{{item.photos.photo1}}" class="image">
+  <img src="{{item.photos.photo2}}" class="image">
+  <img src="{{item.photos.photo3}}" class="image">
+  <img src="{{item.photos.photo4}}" class="image">
+  <img src="{{item.photos.photo5}}" class="image">
+
+  <div>
+    <button (click)="updateItem()">Update</button>
+    <button>Go Back</button>
+  </div>
+
+
+
+</div>
+

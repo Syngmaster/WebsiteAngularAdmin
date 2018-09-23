@@ -1,0 +1,35 @@
+.container {
+    float: left;
+    width: 32%;
+    text-align: center;
+    border: 0.01cm solid black;
+    margin-right: 1%;
+}
+
+.title {
+    color: black;
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;padding:0;
+
+    li {
+        border-top: 0.01cm solid black;
+         height: 50px;
+         padding-top: 25px;
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            margin-top: 20px;
+            
+            li {
+                padding:0;
+            }
+        }
+    }
+}
